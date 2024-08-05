@@ -2,6 +2,7 @@ import 'package:base_mvvm_cubit/core/network/base_dio.dart';
 import 'package:base_mvvm_cubit/core/utils/navigation_service.dart';
 import 'package:base_mvvm_cubit/core/utils/shared_preferences_manager.dart';
 import 'package:base_mvvm_cubit/cubit/auth/auth_cubit.dart';
+import 'package:base_mvvm_cubit/cubit/language/change_language_cubit.dart';
 import 'package:base_mvvm_cubit/data/repositories/authen_repository.dart';
 import 'package:base_mvvm_cubit/data/service/authen_service.dart';
 import 'package:dio/dio.dart';
@@ -31,4 +32,5 @@ Future setupLocator() async {
 
   // cubit
   serviceLocator.registerLazySingleton(() => AuthCubit());
+  serviceLocator.registerLazySingleton(() => LanguageCubit());
 }
