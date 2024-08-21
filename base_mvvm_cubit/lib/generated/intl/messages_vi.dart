@@ -23,6 +23,28 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "hello": MessageLookupByLibrary.simpleMessage("Xin chào"),
+        "strBadRequestError":
+            MessageLookupByLibrary.simpleMessage("lỗi yêu cầu không hợp lệ"),
+        "strCacheError": MessageLookupByLibrary.simpleMessage("lỗi cache"),
+        "strConflictError":
+            MessageLookupByLibrary.simpleMessage("lỗi xung đột"),
+        "strDefaultError": MessageLookupByLibrary.simpleMessage("lỗi mặc định"),
+        "strForbiddenError": MessageLookupByLibrary.simpleMessage("lỗi bị cấm"),
+        "strInternalServerError":
+            MessageLookupByLibrary.simpleMessage("lỗi máy chủ nội bộ"),
+        "strNoContent":
+            MessageLookupByLibrary.simpleMessage("không có nội dung"),
+        "strNoInternetError":
+            MessageLookupByLibrary.simpleMessage("không có kết nối internet"),
+        "strNotFoundError":
+            MessageLookupByLibrary.simpleMessage("không tìm thấy"),
+        "strTimeoutError":
+            MessageLookupByLibrary.simpleMessage("lỗi hết thời gian"),
+        "strUnauthorizedError":
+            MessageLookupByLibrary.simpleMessage("lỗi không được phép"),
+        "strUnknownError":
+            MessageLookupByLibrary.simpleMessage("lỗi không xác định"),
+        "success": MessageLookupByLibrary.simpleMessage("thành công"),
         "welcome": MessageLookupByLibrary.simpleMessage(
             "Chào mừng bạn đến với ứng dụng của chúng tôi")
       };

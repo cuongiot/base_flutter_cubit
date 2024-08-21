@@ -1,5 +1,18 @@
 {
     "@@locale": "ja",
     "hello": "こんにちは",
-    "welcome": "いらっしゃいませ"
+    "welcome": "いらっしゃいませ",
+    "strBadRequestError": "不正なリクエストエラー",
+    "strNoContent": "コンテンツがありません",
+    "strForbiddenError": "アクセスが拒否されました",
+    "strUnauthorizedError": "認証エラー",
+    "strNotFoundError": "見つかりません",
+    "strConflictError": "競合エラー",
+    "strInternalServerError": "内部サーバーエラー",
+    "strUnknownError": "不明なエラー",
+    "strTimeoutError": "タイムアウトエラー",
+    "strDefaultError": "デフォルトエラー",
+    "strCacheError": "キャッシュエラー",
+    "strNoInternetError": "インターネット接続なし",
+    "success": "成功"
 }

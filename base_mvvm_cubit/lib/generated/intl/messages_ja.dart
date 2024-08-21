@@ -23,6 +23,23 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "hello": MessageLookupByLibrary.simpleMessage("こんにちは"),
+        "strBadRequestError":
+            MessageLookupByLibrary.simpleMessage("不正なリクエストエラー"),
+        "strCacheError": MessageLookupByLibrary.simpleMessage("キャッシュエラー"),
+        "strConflictError": MessageLookupByLibrary.simpleMessage("競合エラー"),
+        "strDefaultError": MessageLookupByLibrary.simpleMessage("デフォルトエラー"),
+        "strForbiddenError":
+            MessageLookupByLibrary.simpleMessage("アクセスが拒否されました"),
+        "strInternalServerError":
+            MessageLookupByLibrary.simpleMessage("内部サーバーエラー"),
+        "strNoContent": MessageLookupByLibrary.simpleMessage("コンテンツがありません"),
+        "strNoInternetError":
+            MessageLookupByLibrary.simpleMessage("インターネット接続なし"),
+        "strNotFoundError": MessageLookupByLibrary.simpleMessage("見つかりません"),
+        "strTimeoutError": MessageLookupByLibrary.simpleMessage("タイムアウトエラー"),
+        "strUnauthorizedError": MessageLookupByLibrary.simpleMessage("認証エラー"),
+        "strUnknownError": MessageLookupByLibrary.simpleMessage("不明なエラー"),
+        "success": MessageLookupByLibrary.simpleMessage("成功"),
         "welcome": MessageLookupByLibrary.simpleMessage("いらっしゃいませ")
       };
 }

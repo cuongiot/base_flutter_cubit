@@ -1,7 +1,18 @@
 {
-    "@@locale": "vi",
-    "hello": "Xin chào",
-    "welcome": "Chào mừng bạn đến với ứng dụng của chúng tôi"
-   
-  }
-  
+  "@@locale": "vi",
+  "hello": "Xin chào",
+  "welcome": "Chào mừng bạn đến với ứng dụng của chúng tôi",
+  "strBadRequestError": "lỗi yêu cầu không hợp lệ",
+  "strNoContent": "không có nội dung",
+  "strForbiddenError": "lỗi bị cấm",
+  "strUnauthorizedError": "lỗi không được phép",
+  "strNotFoundError": "không tìm thấy",
+  "strConflictError": "lỗi xung đột",
+  "strInternalServerError": "lỗi máy chủ nội bộ",
+  "strUnknownError": "lỗi không xác định",
+  "strTimeoutError": "lỗi hết thời gian",
+  "strDefaultError": "lỗi mặc định",
+  "strCacheError": "lỗi cache",
+  "strNoInternetError": "không có kết nối internet",
+  "success": "thành công"
+}

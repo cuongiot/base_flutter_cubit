@@ -1,7 +1,20 @@
 {
     "@@locale": "en",
     "hello": "hello",
-    "welcome": "welcome"
+    "welcome": "welcome",
+    "strBadRequestError": "bad_request_error",
+    "strNoContent": "no_content",
+    "strForbiddenError": "forbidden_error",
+    "strUnauthorizedError": "unauthorized_error",
+    "strNotFoundError": "not_found_error",
+    "strConflictError": "conflict_error",
+    "strInternalServerError": "internal_server_error",
+    "strUnknownError": "unknown_error",
+    "strTimeoutError": "timeout_error",
+    "strDefaultError": "default_error",
+    "strCacheError": "cache_error",
+    "strNoInternetError": "no_internet_error",
+    "success": "success"
     
   }
   

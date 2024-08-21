@@ -1,5 +1,5 @@
-import 'package:base_mvvm_cubit/data/models/reponse/credential_model.dart';
-import 'package:base_mvvm_cubit/data/models/reponse/info_user_model.dart';
+import 'package:base_mvvm_cubit/data/models/response/credential_model.dart';
+import 'package:base_mvvm_cubit/data/models/response/info_user_model.dart';
 import 'package:base_mvvm_cubit/data/models/request/login_request.dart';
 import 'package:dio/dio.dart';
 import 'package:retrofit/retrofit.dart';

@@ -1,6 +1,10 @@
+import 'package:base_mvvm_cubit/core/base/base_cubit/base_cubit.dart';
+import 'package:base_mvvm_cubit/core/utils/navigation_service.dart';
 import 'package:base_mvvm_cubit/cubit/auth/auth_cubit.dart';
 import 'package:base_mvvm_cubit/cubit/info_user/info_user_cubit.dart';
 import 'package:base_mvvm_cubit/cubit/language/change_language_cubit.dart';
+import 'package:base_mvvm_cubit/data/models/response/info_user_model.dart';
+import 'package:base_mvvm_cubit/di/di.dart';
 import 'package:base_mvvm_cubit/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -38,17 +42,18 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              BlocConsumer<InfoUserCubit, InfoUserState>(
+              BlocConsumer<InfoUserCubit, BaseState>(
                 listener: (context, state) {
-                  if (state is InfoUserError) {
+                  if (state is FailureState) {
                     // show dialog, snackbar error message
                   }
                 },
                 builder: (context, state) {
-                  if (state is InfoUserLoading) {
+                  if (state is LoadingState) {
                     return const CircularProgressIndicator();
                   }
-                  if (state is InfoUserLoaded) {
+                  if (state is SuccessState<InfoUserModel>) {
+                    var infoUser = state.response;
                     return Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -58,7 +63,7 @@ class HomeScreen extends StatelessWidget {
                           style: Theme.of(context).textTheme.bodyLarge,
                         ),
                         Text(
-                          state.infoUser.firstName ?? "--",
+                          infoUser.firstName ?? "--",
                           style: Theme.of(context).textTheme.bodyLarge,
                         ),
                       ],
@@ -101,6 +106,16 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+
+  Widget _widgetE() {
+    return TextButton(
+      onPressed: () {
+        Navigator.of(serviceLocator<NavigationService>().navigatorContext)
+            .pop();
+      },
+      child: const Text("Back to Screen 1"),
     );
   }
 }

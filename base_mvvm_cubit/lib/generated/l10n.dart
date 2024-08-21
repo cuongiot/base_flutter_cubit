@@ -69,6 +69,136 @@ class S {
       args: [],
     );
   }
+
+  /// `bad_request_error`
+  String get strBadRequestError {
+    return Intl.message(
+      'bad_request_error',
+      name: 'strBadRequestError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `no_content`
+  String get strNoContent {
+    return Intl.message(
+      'no_content',
+      name: 'strNoContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `forbidden_error`
+  String get strForbiddenError {
+    return Intl.message(
+      'forbidden_error',
+      name: 'strForbiddenError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `unauthorized_error`
+  String get strUnauthorizedError {
+    return Intl.message(
+      'unauthorized_error',
+      name: 'strUnauthorizedError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `not_found_error`
+  String get strNotFoundError {
+    return Intl.message(
+      'not_found_error',
+      name: 'strNotFoundError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `conflict_error`
+  String get strConflictError {
+    return Intl.message(
+      'conflict_error',
+      name: 'strConflictError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `internal_server_error`
+  String get strInternalServerError {
+    return Intl.message(
+      'internal_server_error',
+      name: 'strInternalServerError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `unknown_error`
+  String get strUnknownError {
+    return Intl.message(
+      'unknown_error',
+      name: 'strUnknownError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `timeout_error`
+  String get strTimeoutError {
+    return Intl.message(
+      'timeout_error',
+      name: 'strTimeoutError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `default_error`
+  String get strDefaultError {
+    return Intl.message(
+      'default_error',
+      name: 'strDefaultError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `cache_error`
+  String get strCacheError {
+    return Intl.message(
+      'cache_error',
+      name: 'strCacheError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `no_internet_error`
+  String get strNoInternetError {
+    return Intl.message(
+      'no_internet_error',
+      name: 'strNoInternetError',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `success`
+  String get success {
+    return Intl.message(
+      'success',
+      name: 'success',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

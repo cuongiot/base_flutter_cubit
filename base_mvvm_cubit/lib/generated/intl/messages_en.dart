@@ -23,6 +23,29 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "hello": MessageLookupByLibrary.simpleMessage("hello"),
+        "strBadRequestError":
+            MessageLookupByLibrary.simpleMessage("bad_request_error"),
+        "strCacheError": MessageLookupByLibrary.simpleMessage("cache_error"),
+        "strConflictError":
+            MessageLookupByLibrary.simpleMessage("conflict_error"),
+        "strDefaultError":
+            MessageLookupByLibrary.simpleMessage("default_error"),
+        "strForbiddenError":
+            MessageLookupByLibrary.simpleMessage("forbidden_error"),
+        "strInternalServerError":
+            MessageLookupByLibrary.simpleMessage("internal_server_error"),
+        "strNoContent": MessageLookupByLibrary.simpleMessage("no_content"),
+        "strNoInternetError":
+            MessageLookupByLibrary.simpleMessage("no_internet_error"),
+        "strNotFoundError":
+            MessageLookupByLibrary.simpleMessage("not_found_error"),
+        "strTimeoutError":
+            MessageLookupByLibrary.simpleMessage("timeout_error"),
+        "strUnauthorizedError":
+            MessageLookupByLibrary.simpleMessage("unauthorized_error"),
+        "strUnknownError":
+            MessageLookupByLibrary.simpleMessage("unknown_error"),
+        "success": MessageLookupByLibrary.simpleMessage("success"),
         "welcome": MessageLookupByLibrary.simpleMessage("welcome")
       };
 }
